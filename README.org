@@ -1,3 +1,0 @@
-* org-beamer
-
-template for writing Beamer presentations in org-mode
