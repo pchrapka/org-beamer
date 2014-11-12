@@ -1,26 +1,35 @@
 #+TITLE:     Writing Beamer presentations in org-mode
-#+AUTHOR:    Sefa Kilic
-#+EMAIL:     sefakilic@gmail.com
+#+AUTHOR:    Phil Chrapka
+#+EMAIL:     chrapkpk@mcmaster.ca
+#+DATE:      Nov 11, 2014
 
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
-#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:n tags:not-in-toc
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+LINK_UP:   
 #+LINK_HOME: 
 #+XSLT:
+
 #+startup: beamer
 #+LaTeX_CLASS: beamer
 #+LaTeX_CLASS_OPTIONS: [bigger]
-#+BEAMER_THEME: default
+
+#+latex_header: \mode<beamer>{\usetheme{Boadilla}}
+
+#+latex_header:\pdfmapfile{+sansmathaccent.map}
+
+#+latex_header:\usepackage{phil}
+
+#+latex_header:%\setbeameroption{show notes} %un-comment to see the notes
+
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+
 #+BEAMER_FRAME_LEVEL: 2
-#+LATEX_HEADER: \setbeamertemplate{navigation symbols}{}
-#+LATEX_HEADER: \institute{institute goes here}
-#+LATEX_HEADER: \date{today}
 
 * Introduction
 ** A simple slide
